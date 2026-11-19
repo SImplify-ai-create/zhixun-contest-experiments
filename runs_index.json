@@ -1,0 +1,2189 @@
+[
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-025146",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:42:31.140Z",
+  "finished_at": "2026-11-05T08:42:45.453Z",
+  "run_id": "j9pr1h71luswf9wkjjpvb",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-030052",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:43:13.112Z",
+  "finished_at": "2026-11-05T08:43:32.664Z",
+  "run_id": "i9b6a349gb2wlhzo8esgk",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-030059",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:43:35.995Z",
+  "finished_at": "2026-11-05T08:43:49.926Z",
+  "run_id": "1l4zfnsue8q578xdksbgs",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-030210",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:43:52.862Z",
+  "finished_at": "2026-11-05T08:44:05.826Z",
+  "run_id": "95dsfvtxyfmczqlebd2lo",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-030218",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:44:08.150Z",
+  "finished_at": "2026-11-05T08:44:24.873Z",
+  "run_id": "lx4s81kvfyvj0oecw3hbn",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-030413",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:44:28.146Z",
+  "finished_at": "2026-11-05T08:44:43.127Z",
+  "run_id": "meka37on6sdydlj2ewpqh",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-030433",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:44:45.757Z",
+  "finished_at": "2026-11-05T08:45:02.422Z",
+  "run_id": "devsozi3k3va053i1hm6s",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-191113",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:45:05.318Z",
+  "finished_at": "2026-11-05T08:45:21.069Z",
+  "run_id": "eqog0xrnjznm4a7htysmi",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-191350",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:45:23.765Z",
+  "finished_at": "2026-11-05T08:45:42.183Z",
+  "run_id": "qz7d5mnb2imjfc7l45kye",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-191606",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:45:45.162Z",
+  "finished_at": "2026-11-05T08:45:57.826Z",
+  "run_id": "mq52jcju3obxbj8fmky6p",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-191854",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:45:59.818Z",
+  "finished_at": "2026-11-05T08:46:15.244Z",
+  "run_id": "3z3yreij03ey2v7pcmfg7",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-191909",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:46:17.910Z",
+  "finished_at": "2026-11-05T08:46:34.015Z",
+  "run_id": "b1zxz7e99mow9n0iexj46",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-192100",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:46:35.859Z",
+  "finished_at": "2026-11-05T08:46:58.006Z",
+  "run_id": "q65vwmo5acod0hb1bb0l0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192105",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:47:02.297Z",
+  "finished_at": "2026-11-05T08:47:23.299Z",
+  "run_id": "jdbxig97wsfpt302qc9uq",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-192208",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:47:26.860Z",
+  "finished_at": "2026-11-05T08:47:44.085Z",
+  "run_id": "ayz9dta7pil672079d6dr",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192213",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:47:47.876Z",
+  "finished_at": "2026-11-05T08:48:03.566Z",
+  "run_id": "h11wzoplbpl7fk0cheb2x",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192246",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:48:06.001Z",
+  "finished_at": "2026-11-05T08:48:20.372Z",
+  "run_id": "f0fcqh7u04oah9v4y26qd",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-192324",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:48:23.643Z",
+  "finished_at": "2026-11-05T08:48:37.646Z",
+  "run_id": "3z6ebv2en6rxz11ra2apt",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192329",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:48:40.628Z",
+  "finished_at": "2026-11-05T08:48:55.561Z",
+  "run_id": "l1dm6mbqw02rm5j5aj52g",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192416",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:48:59.124Z",
+  "finished_at": "2026-11-05T08:49:16.626Z",
+  "run_id": "e2uc4kimz1q6varf81war",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-192508",
+  "state": "RUNNING",
+  "created_at": "2026-11-05T08:49:19.458Z",
+  "finished_at": null,
+  "run_id": "v72z2q80g2wzy7m3lbpl0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192513",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:51:14.767Z",
+  "finished_at": "2026-11-05T08:51:47.804Z",
+  "run_id": "3umf44nct9mitw13qzf76",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192535",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:51:20.984Z",
+  "finished_at": "2026-11-05T08:51:53.465Z",
+  "run_id": "so4hqehtec60a4m8t4ho2",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-192611",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:51:26.004Z",
+  "finished_at": "2026-11-05T08:52:04.688Z",
+  "run_id": "6n523blwpq9acrm9wuqb5",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192615",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:51:56.600Z",
+  "finished_at": "2026-11-05T08:52:21.411Z",
+  "run_id": "97x8lqcb1rs18s5g44gws",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-192641",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:52:02.689Z",
+  "finished_at": "2026-11-05T08:52:23.878Z",
+  "run_id": "h5phxrs1et8dm9fl76367",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192645",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:52:08.719Z",
+  "finished_at": "2026-11-05T08:52:29.393Z",
+  "run_id": "8irv56v8a9bgnpm30ugdw",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-192732",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:52:25.260Z",
+  "finished_at": "2026-11-05T08:52:47.377Z",
+  "run_id": "uud9gfnnedibmb5gyxe40",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192736",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:52:28.625Z",
+  "finished_at": "2026-11-05T08:52:50.904Z",
+  "run_id": "lvaazd4yeobm65ad2slo0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-sudden-1031-192809",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:52:33.747Z",
+  "finished_at": "2026-11-05T08:52:56.674Z",
+  "run_id": "97o8l1596o0d8ng0kyv7q",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "demo-gradual-1031-192813",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:52:51.856Z",
+  "finished_at": "2026-11-05T08:53:18.766Z",
+  "run_id": "rxy8kyh5h0ez0w3ygn564",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "smoke-sudden-1101-133023",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:52:56.411Z",
+  "finished_at": "2026-11-05T08:53:22.978Z",
+  "run_id": "lntmbgbqxvfi08m6aby4n",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "smoke-official-1101-133039",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:53:01.695Z",
+  "finished_at": "2026-11-05T08:53:26.538Z",
+  "run_id": "897wehpw2xrgsi5eujvzk",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1101-142620",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:53:23.702Z",
+  "finished_at": "2026-11-05T08:53:47.551Z",
+  "run_id": "j4ethpilqj80dbyp25ais",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1101-142636",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:53:28.281Z",
+  "finished_at": "2026-11-05T08:53:55.009Z",
+  "run_id": "lqfico77zmw73skcbjg35",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1101-161448",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:53:30.646Z",
+  "finished_at": "2026-11-05T08:53:57.041Z",
+  "run_id": "6jfczzy1qa5mo1gu2txzu",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1101-161617",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:53:52.124Z",
+  "finished_at": "2026-11-05T08:54:15.061Z",
+  "run_id": "gi6x7qk1yiwih0zdwuq53",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1101-162850",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:53:59.220Z",
+  "finished_at": "2026-11-05T08:54:23.072Z",
+  "run_id": "ql18q4udepxxtmzpyhnqn",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1101-162857",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:54:01.399Z",
+  "finished_at": "2026-11-05T08:54:24.844Z",
+  "run_id": "xwvr1alrqpuf4cjgnwl2f",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1101-224218",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:54:19.349Z",
+  "finished_at": "2026-11-05T08:54:41.739Z",
+  "run_id": "ztij6ttbotjggkwpi9nyf",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1101-224226",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:54:27.341Z",
+  "finished_at": "2026-11-05T08:54:52.801Z",
+  "run_id": "pl5xob5gxnatdv4bv6ue3",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "mock-official-1101-224635",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:54:28.929Z",
+  "finished_at": "2026-11-05T08:54:54.548Z",
+  "run_id": "efheucie36jo2euy04rqt",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "console-1101-231912",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:54:46.889Z",
+  "finished_at": "2026-11-05T08:55:11.097Z",
+  "run_id": "t7hrnhg8tbtzqk64vehpr",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "api-regress-1101-232144",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:54:57.654Z",
+  "finished_at": "2026-11-05T08:55:26.403Z",
+  "run_id": "yfe4egynp0jboerw3vg6f",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-074808",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:54:59.618Z",
+  "finished_at": "2026-11-05T08:55:27.343Z",
+  "run_id": "wh013kzqu28zj4287ti30",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-075105",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:55:16.056Z",
+  "finished_at": "2026-11-05T08:55:40.881Z",
+  "run_id": "2m4eqpz82x4cbvlksdb7p",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-075236",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:55:30.734Z",
+  "finished_at": "2026-11-05T08:56:01.934Z",
+  "run_id": "ff2sdo9pd36kxnsv1d9n2",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-081118",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:55:32.477Z",
+  "finished_at": "2026-11-05T08:56:00.231Z",
+  "run_id": "3733jdmauy0p6cp81oa1n",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-083712",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:55:45.577Z",
+  "finished_at": "2026-11-05T08:56:10.381Z",
+  "run_id": "94adkerux0hwi3h4cmvib",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "anchor2-sudden-42-1102-101057",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:56:04.794Z",
+  "finished_at": "2026-11-05T08:56:28.480Z",
+  "run_id": "f9f8k3pmh7o5hkz4w4otl",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-083731",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:56:06.728Z",
+  "finished_at": "2026-11-05T08:56:30.546Z",
+  "run_id": "pas7c5kf3i9bfpstolhtn",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "anchor2-sudden-7-1102-101201",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:56:15.011Z",
+  "finished_at": "2026-11-05T08:56:37.996Z",
+  "run_id": "6b2scmz3u3blsttg2kgxn",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "anchor2-gradual-42-1102-101401",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:56:33.393Z",
+  "finished_at": "2026-11-05T08:57:03.652Z",
+  "run_id": "cv7qhhjiekd43299esm43",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "anchor2-sudden-2024-1102-101251",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:56:35.416Z",
+  "finished_at": "2026-11-05T08:57:01.656Z",
+  "run_id": "7ouhd8sajg5nnf3uc3yzx",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "anchor2-gradual-7-1102-101450",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:56:42.443Z",
+  "finished_at": "2026-11-05T08:57:13.331Z",
+  "run_id": "6hb93j8rzvt1umfty1gcj",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "anchor2-gradual-2024-1102-101640",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:57:06.740Z",
+  "finished_at": "2026-11-05T08:57:30.854Z",
+  "run_id": "biscv75pmpv16ok9vpskw",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "smoke_sq-1102-120129",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:57:09.014Z",
+  "finished_at": "2026-11-05T08:57:32.977Z",
+  "run_id": "t716yad84gfc9eiknt9md",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "verify_sq_default-1102-121001",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:57:17.139Z",
+  "finished_at": "2026-11-05T08:57:40.957Z",
+  "run_id": "f2hctf1329wuus5widqzo",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "swanlab_smoke-1102-124344",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:57:35.855Z",
+  "finished_at": "2026-11-05T08:57:59.474Z",
+  "run_id": "c98m3nkximfsrhoi947oy",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "swanlab_cloud_verify-1102-125209",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:57:37.394Z",
+  "finished_at": "2026-11-05T08:58:01.108Z",
+  "run_id": "uwkhkatxj1lul9em68nft",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-153811",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:57:45.171Z",
+  "finished_at": "2026-11-05T08:58:08.133Z",
+  "run_id": "2jebv5v1y5hob4m1yjlyg",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-153835",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:58:03.854Z",
+  "finished_at": "2026-11-05T08:58:27.320Z",
+  "run_id": "535f5s992ve5g6iscrsoe",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-154026",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:58:05.951Z",
+  "finished_at": "2026-11-05T08:58:29.069Z",
+  "run_id": "gav66i75tnuzakhz5csmz",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-164702",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:58:12.363Z",
+  "finished_at": "2026-11-05T08:58:33.065Z",
+  "run_id": "318kqhs4zmp3th8l1kf6t",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-164723",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:58:31.479Z",
+  "finished_at": "2026-11-05T08:58:57.281Z",
+  "run_id": "ivbo6w18tyn5g5qd98vzn",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-165940",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:58:33.828Z",
+  "finished_at": "2026-11-05T08:58:55.861Z",
+  "run_id": "te3jrwyysf7w7j0p2fv05",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170005",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:58:37.904Z",
+  "finished_at": "2026-11-05T08:58:58.836Z",
+  "run_id": "gvjmcm9mr1ieck6t6c82n",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170044",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:58:59.149Z",
+  "finished_at": "2026-11-05T08:59:22.471Z",
+  "run_id": "tv24vo6vcosfgjgjh4u6u",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-170016",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:59:00.944Z",
+  "finished_at": "2026-11-05T08:59:26.019Z",
+  "run_id": "ve0swdu2ec4zvge9uss1x",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-170117",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:59:03.125Z",
+  "finished_at": "2026-11-05T08:59:28.419Z",
+  "run_id": "dusabvzpohiqmho0l9fxa",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170508",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:59:27.260Z",
+  "finished_at": "2026-11-05T08:59:50.221Z",
+  "run_id": "ohaszgxu8ab6nyrw3hd1b",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170146",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:59:30.631Z",
+  "finished_at": "2026-11-05T08:59:53.231Z",
+  "run_id": "2796u6u7uumju5y6ryd03",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170529",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:59:33.342Z",
+  "finished_at": "2026-11-05T08:59:55.008Z",
+  "run_id": "10y10tsax05gaf5wh7lp8",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-170702",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:59:54.604Z",
+  "finished_at": "2026-11-05T09:00:17.746Z",
+  "run_id": "a6bl3ao5q880yuofwq83m",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170608",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:59:57.473Z",
+  "finished_at": "2026-11-05T09:00:19.501Z",
+  "run_id": "zunn4p9gsrv8xt7bw6bd7",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-170721",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T08:59:59.057Z",
+  "finished_at": "2026-11-05T09:00:20.256Z",
+  "run_id": "ezt3qb6h1q180fcylukjq",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170813",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:00:21.596Z",
+  "finished_at": "2026-11-05T09:00:43.421Z",
+  "run_id": "k2djg16kse8x4mz8tva5n",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-170747",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:00:23.768Z",
+  "finished_at": "2026-11-05T09:00:45.593Z",
+  "run_id": "tyqt0zntn40p1zu2nd5dn",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170826",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:00:24.475Z",
+  "finished_at": "2026-11-05T09:00:46.837Z",
+  "run_id": "xbx5hm1h5o50cw6ximt1l",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-171103",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:00:47.631Z",
+  "finished_at": "2026-11-05T09:01:11.060Z",
+  "run_id": "tmqep326xs2i9y5md5rnf",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-170853",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:00:49.948Z",
+  "finished_at": "2026-11-05T09:01:13.538Z",
+  "run_id": "oopo83fkxiqn3n67unll6",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-171140",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:00:51.739Z",
+  "finished_at": "2026-11-05T09:01:16.406Z",
+  "run_id": "itw6cdkw9u3d8l3c0ezs2",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-171220",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:01:15.610Z",
+  "finished_at": "2026-11-05T09:01:36.618Z",
+  "run_id": "wao1egqpfzxrsaam126u1",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-171157",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:01:17.604Z",
+  "finished_at": "2026-11-05T09:01:39.586Z",
+  "run_id": "ndimgdm2upmhhsuwgwa5f",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-171249",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:01:20.572Z",
+  "finished_at": "2026-11-05T09:01:43.559Z",
+  "run_id": "t9b10j2h7rfvjtkrq3h2b",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-180547",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:01:41.010Z",
+  "finished_at": "2026-11-05T09:02:03.431Z",
+  "run_id": "mlqod9mtcyzy737qkrd6p",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-171321",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:01:46.150Z",
+  "finished_at": "2026-11-05T09:02:07.399Z",
+  "run_id": "pulu1cs6qhasrcjqz8d2t",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-180556",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:01:47.658Z",
+  "finished_at": "2026-11-05T09:02:09.357Z",
+  "run_id": "d1hdub3do3e93bi3qhkgs",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-180620",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:02:08.220Z",
+  "finished_at": "2026-11-05T09:02:32.850Z",
+  "run_id": "hdg0nrdqdixyzbeick92v",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1102-180608",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:02:11.781Z",
+  "finished_at": "2026-11-05T09:02:39.163Z",
+  "run_id": "bfv687imee2ad4jlhp8r6",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-180626",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:02:15.067Z",
+  "finished_at": "2026-11-05T09:02:43.283Z",
+  "run_id": "tp9qh807wegk23ufrcxu5",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "audit-smoke-1102-190145",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:02:37.494Z",
+  "finished_at": "2026-11-05T09:02:58.096Z",
+  "run_id": "g8odne7s2x2r1cbwzmpv1",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1102-180640",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:02:43.262Z",
+  "finished_at": "2026-11-05T09:03:04.435Z",
+  "run_id": "yhyikitkjq1hgtei52baz",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "smoke-logger-1102-201556",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:02:47.664Z",
+  "finished_at": "2026-11-05T09:03:07.996Z",
+  "run_id": "8quuzedkqj4fepq2iulwr",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "mg-sudden-s7-1103-135452",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:03:01.784Z",
+  "finished_at": "2026-11-05T09:03:20.924Z",
+  "run_id": "q8pl9s2tva57c3trszon0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "mg-sudden-s42-1103-135316",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:03:08.755Z",
+  "finished_at": "2026-11-05T09:03:31.920Z",
+  "run_id": "wkx0y8e9ortmps4jguugt",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "mg-sudden-s2024-1103-135609",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:03:11.862Z",
+  "finished_at": "2026-11-05T09:03:31.717Z",
+  "run_id": "goi1e8z9zkq3fl8kb9god",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "mg-gradual-s7-1103-135812",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:03:25.273Z",
+  "finished_at": "2026-11-05T09:03:45.676Z",
+  "run_id": "snjvug51bgwb2h7u1letd",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "mg-gradual-s2024-1103-135948",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:03:35.896Z",
+  "finished_at": "2026-11-05T09:03:58.020Z",
+  "run_id": "pecgweozcpac14ucqz659",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "mg-gradual-s42-1103-135715",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:03:35.943Z",
+  "finished_at": "2026-11-05T09:03:57.793Z",
+  "run_id": "wkmeb14mr4o3ai6vtiya9",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-gradual-s42-1103-140458",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:03:49.801Z",
+  "finished_at": "2026-11-05T09:04:10.291Z",
+  "run_id": "j9sep4ur6kigt0u4nj186",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-sudden-s42-1103-140350",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:04:01.905Z",
+  "finished_at": "2026-11-05T09:04:23.712Z",
+  "run_id": "nlvb4yjic087xgdvhpv60",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-sudden-s7-1103-140552",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:04:02.072Z",
+  "finished_at": "2026-11-05T09:04:23.655Z",
+  "run_id": "nw9tp9gm4jgyj2h83pe1h",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-sudden-s2024-1103-140841",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:04:14.053Z",
+  "finished_at": "2026-11-05T09:04:36.052Z",
+  "run_id": "u7wjmcf4z71tn58ysgrzx",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-gradual-s2024-1103-140949",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:04:28.656Z",
+  "finished_at": "2026-11-05T09:04:51.440Z",
+  "run_id": "2hm86r9vl4w8qrwckig78",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-gradual-s7-1103-140702",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:04:28.753Z",
+  "finished_at": "2026-11-05T09:04:51.973Z",
+  "run_id": "i1t96c6vheu4g2folwb5w",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kf-summary-1103-201606",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:04:39.610Z",
+  "finished_at": "2026-11-05T09:05:00.238Z",
+  "run_id": "x6vbmd5z1auvb2iz4w5og",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s42-off-1103-201633",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:04:55.793Z",
+  "finished_at": "2026-11-05T09:05:15.708Z",
+  "run_id": "a5v7h40dmy3tnw8ql5dkv",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kf-sanity-sudden-on-1103-201411",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:04:56.709Z",
+  "finished_at": "2026-11-05T09:05:15.884Z",
+  "run_id": "diqi69fvrzjfmc9zujg6i",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s7-off-1103-201829",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:05:03.420Z",
+  "finished_at": "2026-11-05T09:05:21.657Z",
+  "run_id": "wirqdb7nczvqn8r6d4ebt",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s7-on-1103-201920",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:05:19.587Z",
+  "finished_at": "2026-11-05T09:05:41.189Z",
+  "run_id": "8amgngg406pknolos4uet",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s42-on-1103-201726",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:05:19.623Z",
+  "finished_at": "2026-11-05T09:05:40.746Z",
+  "run_id": "5tb1dcfg3w9eae23mda72",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s2024-on-1103-202128",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:05:25.299Z",
+  "finished_at": "2026-11-05T09:05:46.481Z",
+  "run_id": "sn2cda4wuoaf44kbxwfi7",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s2024-off-1103-202009",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:05:44.646Z",
+  "finished_at": "2026-11-05T09:06:05.336Z",
+  "run_id": "rro7oxsrj6w1har1i6j15",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s42-off-1103-202317",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:05:45.616Z",
+  "finished_at": "2026-11-05T09:06:06.381Z",
+  "run_id": "nsjc5uutawju49csgxyg0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s7-off-1103-202513",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:05:50.423Z",
+  "finished_at": "2026-11-05T09:06:10.142Z",
+  "run_id": "tal7x4vdax4iemukg4sbo",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s42-on-1103-202412",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:06:09.095Z",
+  "finished_at": "2026-11-05T09:06:31.039Z",
+  "run_id": "d0xawhfx6gaevs7ve2xrz",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s7-on-1103-202623",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:06:10.034Z",
+  "finished_at": "2026-11-05T09:06:32.140Z",
+  "run_id": "s306s9f7glshso72apsuo",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s2024-on-1103-202835",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:06:14.224Z",
+  "finished_at": "2026-11-05T09:06:38.766Z",
+  "run_id": "uvxjpfvswq9j0uimg4rke",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s2024-off-1103-202735",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:06:35.460Z",
+  "finished_at": "2026-11-05T09:06:59.396Z",
+  "run_id": "f3cg5m3en95pu828huy1w",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kf-summary-1103-203144",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:06:36.960Z",
+  "finished_at": "2026-11-05T09:07:00.017Z",
+  "run_id": "0mkkolv1qrk33e9m0y9a3",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s42-on-1103-203245",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:06:43.149Z",
+  "finished_at": "2026-11-05T09:07:05.566Z",
+  "run_id": "8fa01rle43agyk1u406xf",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s42-off-1103-203212",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:07:03.504Z",
+  "finished_at": "2026-11-05T09:07:24.527Z",
+  "run_id": "8zm2sjjbil79hahfqs9gk",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s7-off-1103-203316",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:07:04.433Z",
+  "finished_at": "2026-11-05T09:07:26.147Z",
+  "run_id": "gj9dcvvphzqrtakkewu16",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s2024-off-1103-203422",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:07:10.036Z",
+  "finished_at": "2026-11-05T09:07:31.941Z",
+  "run_id": "0tqr4x4n7j0om68mp792z",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s7-on-1103-203348",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:07:28.413Z",
+  "finished_at": "2026-11-05T09:07:54.416Z",
+  "run_id": "5omzs31qdfl3wvfri19d6",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-sudden-s2024-on-1103-203454",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:07:30.290Z",
+  "finished_at": "2026-11-05T09:07:56.816Z",
+  "run_id": "dqn8l78dldnqd3gawiq5s",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s42-on-1103-203557",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:07:36.462Z",
+  "finished_at": "2026-11-05T09:08:01.651Z",
+  "run_id": "j4chhvcuoap0r6hntw5b9",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s42-off-1103-203533",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:07:59.445Z",
+  "finished_at": "2026-11-05T09:08:29.934Z",
+  "run_id": "we49phlq7sunmiesm6750",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s7-off-1103-203626",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:08:02.031Z",
+  "finished_at": "2026-11-05T09:08:33.434Z",
+  "run_id": "2nq9fuxxlm1v37r0qbp9q",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s2024-off-1103-203841",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:08:07.131Z",
+  "finished_at": "2026-11-05T09:08:35.152Z",
+  "run_id": "yk3qp2fxldajplqr4ygax",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s7-on-1103-203732",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:08:34.752Z",
+  "finished_at": "2026-11-05T09:08:57.488Z",
+  "run_id": "xi08jiwfb1gh2ej2uhfkw",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfabl-gradual-s2024-on-1103-203939",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:08:37.922Z",
+  "finished_at": "2026-11-05T09:09:01.677Z",
+  "run_id": "5b739a05qxnk016gutmv7",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfreg-sudden-s42-1103-205533",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:08:40.785Z",
+  "finished_at": "2026-11-05T09:09:04.447Z",
+  "run_id": "petbz0vogk3rtr334t0mb",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfreg-gradual-s42-1103-205511",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:09:02.600Z",
+  "finished_at": "2026-11-05T09:09:21.647Z",
+  "run_id": "5amdgsh2okg2578js47pk",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfreg-sudden-s42-1103-205610",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:09:06.683Z",
+  "finished_at": "2026-11-05T09:09:29.856Z",
+  "run_id": "9fqd4h4wwajprx01atgod",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfreg-sudden-s2024-1103-205658",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:09:08.638Z",
+  "finished_at": "2026-11-05T09:09:32.515Z",
+  "run_id": "2pr3xmz0mc4wiyzh97biq",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfreg-sudden-s7-1103-205634",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:09:26.656Z",
+  "finished_at": "2026-11-05T09:09:49.604Z",
+  "run_id": "svtmv9h2t19h3igck7oq2",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfreg-gradual-s42-1103-205721",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:09:34.553Z",
+  "finished_at": "2026-11-05T09:10:06.683Z",
+  "run_id": "uzpyzj3npb6p8wnrswd4v",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfreg-gradual-s2024-1103-205808",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:09:37.227Z",
+  "finished_at": "2026-11-05T09:10:15.858Z",
+  "run_id": "2m2teknceff3zetlhp974",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "kfreg-gradual-s7-1103-205744",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:09:56.673Z",
+  "finished_at": "2026-11-05T09:10:27.025Z",
+  "run_id": "i3p4a9f88sqbga9qttkaa",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "mlp-regression-check-1103-210113",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:10:16.139Z",
+  "finished_at": "2026-11-05T09:10:41.234Z",
+  "run_id": "jxk9dxugin4kt87966i8n",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "clean-kf-1103-211516",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:10:22.376Z",
+  "finished_at": "2026-11-05T09:10:50.338Z",
+  "run_id": "xi39cljfahuv00pmwzylq",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "clean-mlp-1103-211500",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:10:32.341Z",
+  "finished_at": "2026-11-05T09:10:57.681Z",
+  "run_id": "yppz8es6q38cs69bispfu",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-sudden-mlp-1103-211744",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:10:49.214Z",
+  "finished_at": "2026-11-05T09:11:12.843Z",
+  "run_id": "wcvlk7ccegmn6at17hl93",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-gradual-mlp-1103-211849",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:10:55.833Z",
+  "finished_at": "2026-11-05T09:11:17.711Z",
+  "run_id": "i6ddocmma5unisa291xyg",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-sudden-kalman-1103-211813",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:11:02.537Z",
+  "finished_at": "2026-11-05T09:11:23.460Z",
+  "run_id": "2uhnin6l60bv4xobmvgu0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-gradual-kalman-1103-211908",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:11:17.889Z",
+  "finished_at": "2026-11-05T09:11:45.962Z",
+  "run_id": "7mwfyfpucmoo8doq9g5r1",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-sudden-kalman-1103-212055",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:11:21.870Z",
+  "finished_at": "2026-11-05T09:11:52.800Z",
+  "run_id": "fhqpsisibnernzmm15waq",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-sudden-mlp-1103-212028",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:11:30.296Z",
+  "finished_at": "2026-11-05T09:11:50.834Z",
+  "run_id": "1fyc2tl9ftdxjl41e79ve",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-sudden-hybrid-1103-212119",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:11:50.777Z",
+  "finished_at": "2026-11-05T09:12:08.620Z",
+  "run_id": "nzowzf0rz9srinbh5gqrv",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-gradual-mlp-1103-212147",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:11:55.815Z",
+  "finished_at": "2026-11-05T09:12:10.825Z",
+  "run_id": "27ea3r097q39zw09yt52l",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-gradual-kalman-1103-212207",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:11:57.019Z",
+  "finished_at": "2026-11-05T09:12:11.848Z",
+  "run_id": "gmgoaduwm4xnbf1cj3srt",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "cmp-gradual-hybrid-1103-212230",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:11.054Z",
+  "finished_at": "2026-11-05T09:12:24.224Z",
+  "run_id": "ddm84elu6925dtcj7fwbg",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "hyb-sudden-s42-1103-212732",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:13.281Z",
+  "finished_at": "2026-11-05T09:12:27.017Z",
+  "run_id": "ij36hk0z44q6h99185lui",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "hyb-sudden-s7-1103-212805",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:14.544Z",
+  "finished_at": "2026-11-05T09:12:28.184Z",
+  "run_id": "fynm107mbxmfd467iwpj8",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "hyb-sudden-s2024-1103-212838",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:26.737Z",
+  "finished_at": "2026-11-05T09:12:40.266Z",
+  "run_id": "667q3910fibdy04hik8vb",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "hyb-gradual-s42-1103-212909",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:29.871Z",
+  "finished_at": "2026-11-05T09:12:43.764Z",
+  "run_id": "bx9qwj04jn9cev66ljs85",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "hyb-gradual-s7-1103-212928",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:31.087Z",
+  "finished_at": "2026-11-05T09:12:44.416Z",
+  "run_id": "t802biuc5lp0s2pg24wo3",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "hyb-gradual-s2024-1103-213002",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:42.851Z",
+  "finished_at": "2026-11-05T09:12:59.516Z",
+  "run_id": "ahbmxkvf5rzzoligi23u7",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-sudden-s42-1103-230155",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:46.877Z",
+  "finished_at": "2026-11-05T09:13:08.659Z",
+  "run_id": "5l91mv7fyzsoo3vvvs8aq",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-sudden-s7-1103-230212",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:12:47.036Z",
+  "finished_at": "2026-11-05T09:13:09.054Z",
+  "run_id": "q2s9acrd01gxafnpnwagk",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-sudden-s2024-1103-230229",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:04.375Z",
+  "finished_at": "2026-11-05T09:13:19.746Z",
+  "run_id": "kz7trg5uzbwdpr1geakth",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-gradual-s42-1103-230242",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:11.767Z",
+  "finished_at": "2026-11-05T09:13:29.436Z",
+  "run_id": "omjo2xjgqfnb7sgzskuhm",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-gradual-s7-1103-230254",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:12.060Z",
+  "finished_at": "2026-11-05T09:13:29.467Z",
+  "run_id": "3i3r10u2w9kgqso0jyfv1",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "baseline-gradual-s2024-1103-230318",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:24.163Z",
+  "finished_at": "2026-11-05T09:13:41.574Z",
+  "run_id": "1ijtjy99mzt6p4xkx9x15",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "fr-off-sudden-1104-222815",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:34.231Z",
+  "finished_at": "2026-11-05T09:13:49.507Z",
+  "run_id": "os3gfqozcg9tq6uu607jq",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1104-222259",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:34.359Z",
+  "finished_at": "2026-11-05T09:13:49.496Z",
+  "run_id": "sg3fxv3u3amvgp0q229nd",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "fr-a1-sudden-1104-222830",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:44.463Z",
+  "finished_at": "2026-11-05T09:13:57.876Z",
+  "run_id": "982wknlvbzci5pqyqju5t",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "fr-a2-sudden-1104-222838",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:52.608Z",
+  "finished_at": "2026-11-05T09:14:06.907Z",
+  "run_id": "75c0j2snpq7l9o0wal2y4",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "fr-off-gradual-1104-222845",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:13:52.825Z",
+  "finished_at": "2026-11-05T09:14:07.064Z",
+  "run_id": "xgmp2r8izm17m1sw32d8u",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "fr-a1-gradual-1104-222849",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:00.523Z",
+  "finished_at": "2026-11-05T09:14:14.602Z",
+  "run_id": "qeoe2wmxwgntpkbwswsug",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "fr-a2-gradual-1104-222854",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:09.482Z",
+  "finished_at": "2026-11-05T09:14:23.785Z",
+  "run_id": "x7orrhbo13rtumfi6ygd6",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1104-223105",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:09.666Z",
+  "finished_at": "2026-11-05T09:14:25.725Z",
+  "run_id": "t69tvqy73wwr7pc5dpjdc",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-sudden-1104-225356",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:17.157Z",
+  "finished_at": "2026-11-05T09:14:31.746Z",
+  "run_id": "nbvimudfvqioaoj0bg2s8",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "synthetic-gradual-1104-225417",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:26.311Z",
+  "finished_at": "2026-11-05T09:14:39.857Z",
+  "run_id": "4apglk901w5r7perjnj7f",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "live-test-1104-231830",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:28.791Z",
+  "finished_at": "2026-11-05T09:14:41.925Z",
+  "run_id": "pnz2l435hrqtu5rb1ub4q",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "live-mlp-sudden-1104-235948",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:34.184Z",
+  "finished_at": "2026-11-05T09:14:49.329Z",
+  "run_id": "ycwtwq2wyqlio2fpojf7b",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "live-verify-1105-000249",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:42.415Z",
+  "finished_at": "2026-11-05T09:16:25.255Z",
+  "run_id": "m70c1q0ne6cmk1ytwf96i",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "live-mlp-sudden-1105-000635",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:45.447Z",
+  "finished_at": "2026-11-05T09:16:26.164Z",
+  "run_id": "c3tjpstcba75leqn9iyrs",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "live-final-1105-001924",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:14:52.964Z",
+  "finished_at": "2026-11-05T09:16:24.457Z",
+  "run_id": "wvrjji2yvycvvyo36d0tr",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "gating_ablation_v11",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:16:27.366Z",
+  "finished_at": "2026-11-05T09:16:36.367Z",
+  "run_id": "6pon09s3zpt9a59if764p",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "live-mlp-sudden-1105-002028",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:16:28.032Z",
+  "finished_at": "2026-11-05T09:16:37.815Z",
+  "run_id": "uhz52ic952s136dbl149f",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "budget_sweep",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:16:28.838Z",
+  "finished_at": "2026-11-05T09:16:37.862Z",
+  "run_id": "ror9bxeshvequm3os0dc8",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "rebaseline_eval",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:16:38.297Z",
+  "finished_at": "2026-11-05T09:16:50.480Z",
+  "run_id": "y9odf4cz1tk69l8dn965w",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "innov45_eval",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:16:39.816Z",
+  "finished_at": "2026-11-05T09:16:52.748Z",
+  "run_id": "vjb28x1x58y8290ywu7qx",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "probe_accept_gate",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:16:39.945Z",
+  "finished_at": "2026-11-05T09:16:52.676Z",
+  "run_id": "yc6tnr0b81huqgjrl1ju9",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "rebaseline_eval_v2",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:16:54.779Z",
+  "finished_at": "2026-11-05T09:17:06.332Z",
+  "run_id": "xuafuedzhqjfo1lhgjmwj",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "rebaseline_eval_v1",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:16:54.861Z",
+  "finished_at": "2026-11-05T09:17:06.313Z",
+  "run_id": "xx5emj4bq6egup04sc06r",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "_a1_demo/out/a1_demo-1105-153219",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:28:38.360Z",
+  "finished_at": "2026-11-05T09:28:44.814Z",
+  "run_id": "kkm9zy892m8igbgay3h46",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "_audit/audit_sudden-1105-120432",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:28:46.097Z",
+  "finished_at": "2026-11-05T09:28:52.424Z",
+  "run_id": "9owwgbnlyrp77yf59mkva",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "_harness_e2e/harness/e2e-harness-1105-154915",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:28:53.677Z",
+  "finished_at": "2026-11-05T09:29:00.006Z",
+  "run_id": "3vqei85pdoi8huat6ohq9",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "_harness_e2e/threshold/e2e-threshold-1105-154936",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:29:01.287Z",
+  "finished_at": "2026-11-05T09:29:07.463Z",
+  "run_id": "sn022c70p9mlo4f7h66t0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "_harness_e2e_round3/apd/r3-apd-1105-162111",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:29:08.733Z",
+  "finished_at": "2026-11-05T09:29:15.162Z",
+  "run_id": "3okro74jdt3arfw271ztk",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "_harness_e2e_round3/harness/r3-harness-1105-162024",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:29:16.345Z",
+  "finished_at": "2026-11-05T09:29:22.659Z",
+  "run_id": "av1yn8i10dwbshv05xvw8",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "_harness_e2e_round3/threshold/r3-threshold-1105-162052",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:29:23.932Z",
+  "finished_at": "2026-11-05T09:29:30.221Z",
+  "run_id": "m5ocu7t7bslu3y4hwm7b2",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "_phase1_a1/phase1_a1-1105-132636",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:29:31.560Z",
+  "finished_at": "2026-11-05T09:29:37.832Z",
+  "run_id": "htuy3uhoc6c7nreqag9rw",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s1_evaluation/s1_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:29:39.070Z",
+  "finished_at": "2026-11-05T09:29:45.827Z",
+  "run_id": "14qjvxcvdxv5ne6grnucy",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s1_evaluation/s1_runs",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:29:47.211Z",
+  "finished_at": "2026-11-05T09:29:55.000Z",
+  "run_id": "gj8byuda3b344goj27zra",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_1_hpo/hpo_candidates",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:29:56.318Z",
+  "finished_at": "2026-11-05T09:30:03.610Z",
+  "run_id": "mkj6ifj8kdkyl512cm9oz",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_1_hpo/hpo_validation",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:30:05.187Z",
+  "finished_at": "2026-11-05T09:30:13.020Z",
+  "run_id": "s710n6gwnopb729xgsd36",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_evaluation/s2_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:30:14.420Z",
+  "finished_at": "2026-11-05T09:30:22.288Z",
+  "run_id": "a4c192snet2xzse6kdjgs",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_evaluation/s2_runs",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:30:23.516Z",
+  "finished_at": "2026-11-05T09:30:31.461Z",
+  "run_id": "8m95fyylmqd3gylttl6db",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_heldout/s2_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:30:32.770Z",
+  "finished_at": "2026-11-05T09:30:40.580Z",
+  "run_id": "wdkcj5w4gq2nm28tem0qo",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_heldout/s2_runs",
+  "state": "FINISHED",
+  "created_at": "2026-11-05T09:30:41.769Z",
+  "finished_at": "2026-11-05T09:30:50.173Z",
+  "run_id": "ggsj3kn6u05xkam03oncv",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_ridge_a2_heldout/sudden/s2_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-06T07:38:14.659Z",
+  "finished_at": "2026-11-06T07:38:21.137Z",
+  "run_id": "k21svrgvq4w055b2t8tf7",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_ridge_a2_heldout/gradual/s2_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-06T07:38:33.028Z",
+  "finished_at": "2026-11-06T07:38:39.382Z",
+  "run_id": "porz76ev1dz4k5ckooezq",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_ridge_a2_heldout/domain/s2_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-06T07:38:40.767Z",
+  "finished_at": "2026-11-06T07:38:47.323Z",
+  "run_id": "nh06edqzw0lb73nakruyb",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_ridge_a2_heldout/shallow/s2_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-06T07:38:48.759Z",
+  "finished_at": "2026-11-06T07:38:55.281Z",
+  "run_id": "a5yqbbilb1kqrcm55816l",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_ridge_a2_heldout/deep/s2_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-06T07:39:06.674Z",
+  "finished_at": "2026-11-06T07:39:13.391Z",
+  "run_id": "bkwvn8jahaaghfo93e02z",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "s2_ridge_a2_heldout/stable/s2_batches",
+  "state": "FINISHED",
+  "created_at": "2026-11-06T07:39:14.734Z",
+  "finished_at": "2026-11-06T07:39:20.867Z",
+  "run_id": "fdhddw3o8i1st2a9r165x",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-gas-uci-or",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:48:33.011Z",
+  "finished_at": "2026-11-11T14:49:08.145Z",
+  "run_id": "ok2m180v9cgtv0tekc0q4",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:51:16.412Z",
+  "finished_at": "2026-11-11T14:51:50.898Z",
+  "run_id": "3m663eipvyb4iogepwv18",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:51:53.264Z",
+  "finished_at": "2026-11-11T14:52:19.531Z",
+  "run_id": "w8gw982onao69kuic852c",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:52:22.110Z",
+  "finished_at": "2026-11-11T14:53:01.426Z",
+  "run_id": "a75uy7k0jb7gxsggf7can",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd002",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:54:02.306Z",
+  "finished_at": "2026-11-11T14:55:02.108Z",
+  "run_id": "9qw3hpcbd58rde8cotq0n",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd002",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:55:05.976Z",
+  "finished_at": "2026-11-11T14:56:01.804Z",
+  "run_id": "98e5l6p54xe7oncb8qgss",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd002",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:56:04.546Z",
+  "finished_at": "2026-11-11T14:56:46.937Z",
+  "run_id": "5758zfp5m05uq31studvy",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd003",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:57:35.481Z",
+  "finished_at": "2026-11-11T14:58:08.354Z",
+  "run_id": "xhxyri0jr2jh01reohysg",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd003",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:58:11.058Z",
+  "finished_at": "2026-11-11T14:58:46.527Z",
+  "run_id": "wz0mpmm24fc966tdkx6kv",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd003",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T14:58:50.152Z",
+  "finished_at": "2026-11-11T14:59:44.198Z",
+  "run_id": "61918780jgp5ikvml7kxe",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd004",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:00:22.861Z",
+  "finished_at": "2026-11-11T15:01:10.124Z",
+  "run_id": "ripi84v1m89d0ksnidz0c",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd004",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:01:13.289Z",
+  "finished_at": "2026-11-11T15:01:46.265Z",
+  "run_id": "3atlt4nbvxy5jxztqz2sb",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd004",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:01:48.561Z",
+  "finished_at": "2026-11-11T15:02:38.541Z",
+  "run_id": "28wnkuw9eowpli7dlukjp",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-bearing-2_1",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:03:14.527Z",
+  "finished_at": "2026-11-11T15:03:26.403Z",
+  "run_id": "k4t3n4dloikvwpk7hs4ku",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-bearing-2_3",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:03:28.910Z",
+  "finished_at": "2026-11-11T15:03:38.396Z",
+  "run_id": "cjdtok50vawg2jepcfg67",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-bearing-3_3",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:03:41.029Z",
+  "finished_at": "2026-11-11T15:03:48.911Z",
+  "run_id": "stjxfek8p1piwqqgqdoh2",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-bearing-3_1",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:04:13.598Z",
+  "finished_at": "2026-11-11T15:04:27.180Z",
+  "run_id": "75hrxge9bjpmybg9g63bb",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-bearing-3_2",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:04:32.008Z",
+  "finished_at": "2026-11-11T15:04:44.127Z",
+  "run_id": "qd214r5ye4jhbwo75kxrr",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-bearing-3_4",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:04:48.334Z",
+  "finished_at": "2026-11-11T15:04:58.256Z",
+  "run_id": "im6lbf3g7xowlcqg16z51",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:17:45.306Z",
+  "finished_at": "2026-11-11T15:18:06.423Z",
+  "run_id": "3xv4g31fu7iv37wo14st6",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:19:29.707Z",
+  "finished_at": "2026-11-11T15:19:52.167Z",
+  "run_id": "d33mcbowzz3rae2p8uvy0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:21:04.433Z",
+  "finished_at": "2026-11-11T15:21:21.792Z",
+  "run_id": "rq2cer7hxwrv2u0peddb4",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:22:05.408Z",
+  "finished_at": "2026-11-11T15:22:25.085Z",
+  "run_id": "zm8waajigk0pu6iiww16s",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-fd002",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:28:21.446Z",
+  "finished_at": "2026-11-11T15:28:44.568Z",
+  "run_id": "fq8zq1ztb86gawerxh9in",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-gas",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:29:05.918Z",
+  "finished_at": "2026-11-11T15:29:35.555Z",
+  "run_id": "jxoez2b3vsrvic48vc2h2",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-bearing-3_1",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:30:48.335Z",
+  "finished_at": "2026-11-11T15:31:01.805Z",
+  "run_id": "ofqfv9y85g3eqkvpo51cn",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-bearing-2_1",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:31:15.745Z",
+  "finished_at": "2026-11-11T15:31:22.850Z",
+  "run_id": "6iqebbbo74o45uxgqtdtm",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-bearing-3_3",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:31:36.036Z",
+  "finished_at": "2026-11-11T15:31:42.713Z",
+  "run_id": "teih9hsfyurtvt3mspqu0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "a3-retention-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:33:38.551Z",
+  "finished_at": "2026-11-11T15:33:56.916Z",
+  "run_id": "9x0aeqomg8ov3hzsmich0",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:43:43.089Z",
+  "finished_at": "2026-11-11T15:44:00.212Z",
+  "run_id": "6qqb5cp5lpfls389zqz5l",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:44:01.517Z",
+  "finished_at": "2026-11-11T15:44:17.067Z",
+  "run_id": "v9h9espipti464d06cmgu",
+  "group": ""
+ },
+ {
+  "project": "Simplify-ai-create/zhixun-engine",
+  "run_name": "real-fd001",
+  "state": "FINISHED",
+  "created_at": "2026-11-11T15:44:18.520Z",
+  "finished_at": "2026-11-11T15:44:37.519Z",
+  "run_id": "d41qqt8mn6qnx1r9dbfig",
+  "group": ""
+ }
+]
