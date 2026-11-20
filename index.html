@@ -17,6 +17,10 @@ h2{font-size:20px;margin:44px 0 6px;padding-bottom:6px;border-bottom:2px solid v
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .grid p{margin:0;font-size:14px}
 .miss{color:var(--warn);background:#fff7ed;border-left:3px solid #f59e0b;padding:6px 10px;border-radius:4px;font-size:13px}
+blockquote{margin:4px 0 2px;padding:8px 12px;border-left:3px solid #0b6bcb;background:#f5f9ff;font-size:13.5px;border-radius:0 4px 4px 0}
+.src{margin:2px 0 0;font-size:12px;color:var(--mut)}
+.note-inline{background:#fff7ed;border-left:3px solid #f59e0b;padding:8px 12px;border-radius:4px;font-size:13px;margin:0 0 12px;color:#7c2d12}
+.muted{color:#9aa5b1}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{background:#eef3f9;border:1px solid #dbe6f2;border-radius:999px;padding:2px 10px;font-size:12.5px}
 .chip b{font-weight:600;color:#0b4f8a;margin-right:4px}
@@ -40,12 +44,12 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <h1>实验记录</h1>
 <p>比赛提交通道用的训练记录页：全部数字取自 SwanLab 真实运行记录，未经改写。</p>
 <p>数据来源：SwanLab 私有项目 <code>zhixun-engine</code>（外部不可直接访问，故导出为本页） · 导出时间：2026-11-20 (Asia/Shanghai)</p>
-<p>共 <b>243</b> 条运行记录。平台未记录的字段一律标注「未上传」，本页不代拟实验目的与结论。</p>
+<p>共 <b>243</b> 条运行记录。可与盘上文档逐行对上的实验，已回填「目的 / 改动摘要 / 结论」并标注来源文件与行号；对不上的仍标「未上传」。</p>
 </header>
 <div class="note" style="margin-top:18px"><b>怎么读这页</b>
 <ul>
 <li>每条实验卡片给出：运行标识、配置、指标（含同组不同臂的对照行）、平台记录时间。</li>
-<li>「目的／改动摘要／结论」在 SwanLab 里没有对应字段的运行，一律标 <span style="color:#b45309">未上传</span>——这是真实缺口，不是漏写，也不补造。</li>
+<li>「目的／改动摘要／结论」：能在文档里逐行对上的，按「文件路径 + 章节行号 + 逐字摘录」回填（摘录一字未改）；对不上的标 <span style="color:#b45309">未上传</span>，并在卡片顶部标「文档与平台记录不一致」——这是真实缺口，不补造。</li>
 <li>时间列是平台记录的创建/结束时间（上传时间），不能当作真实训练墙钟时间。</li>
 <li>合成数据上的运行单独归入最后一节，仅作流程追溯，不构成对外效果证据。</li>
 </ul></div>
@@ -53,21 +57,22 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <section class="card">
 <h3>CMAPSS FD001</h3>
 <p class="sub">共 7 条运行</p>
+<p class="note-inline">A/B 两臂是脚本内的纯基线计算，不建云端 run（§10 L230）；本页每条 run 是 C 自进化在对应 task_fuse 模式下的记录。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>C-MAPSS（回归，末 5 批 RMSE，task_fuse=or 默认）；每个子集 3 条 run，对应 task_fuse 三模式</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §1 标题 L22 / §10.1 L213（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>source</b>=cmapss</span><span class="chip"><b>subset</b>=fd001</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>task_fuse</b>=and</span><span class="chip"><b>task_fuse</b>=perf_only</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_cmapss.py --subset FD001</code><br><code>scripts/run_real_cmapss.py --subset FD001 --fuse or</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-fd001</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 14:51:16</td><td>29.4256</td><td>23.9073</td><td>0.2543</td><td>3.7499</td><td>40</td><td>4000</td><td>6</td><td>1</td></tr>
-<tr><td><code>real-fd001</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 14:51:53</td><td>32.6642</td><td>25.7023</td><td>0.0811</td><td>3.7499</td><td>40</td><td>2120</td><td>6</td><td>1</td></tr>
-<tr><td><code>real-fd001</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 14:52:22</td><td>27.4301</td><td>22.5392</td><td>0.352</td><td>3.7499</td><td>600</td><td>3160</td><td>6</td><td>0</td></tr>
-<tr><td><code>real-fd001</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:17:45</td><td>29.4256</td><td>23.9073</td><td>0.2543</td><td>3.7499</td><td>40</td><td>4000</td><td>6</td><td>1</td></tr>
-<tr><td><code>real-fd001</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:43:43</td><td>29.4256</td><td>23.9073</td><td>0.2543</td><td>3.7499</td><td>40</td><td>4000</td><td>6</td><td>1</td></tr>
-<tr><td><code>real-fd001</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 15:44:01</td><td>32.6642</td><td>25.7023</td><td>0.0811</td><td>3.7499</td><td>40</td><td>2120</td><td>6</td><td>1</td></tr>
-<tr><td><code>real-fd001</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 15:44:18</td><td>27.4301</td><td>22.5392</td><td>0.352</td><td>3.7499</td><td>600</td><td>3160</td><td>6</td><td>0</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-fd001</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 14:51:16</td><td>29.4256</td><td>23.9073</td><td>0.2543</td><td>3.7499</td><td>40</td><td>4000</td><td>6</td><td>1</td><td>✓ §10.1 L217</td></tr>
+<tr><td><code>real-fd001</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 14:51:53</td><td>32.6642</td><td>25.7023</td><td>0.0811</td><td>3.7499</td><td>40</td><td>2120</td><td>6</td><td>1</td><td>✓ §10.1 L218</td></tr>
+<tr><td><code>real-fd001</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 14:52:22</td><td>27.4301</td><td>22.5392</td><td>0.352</td><td>3.7499</td><td>600</td><td>3160</td><td>6</td><td>0</td><td>✓ §10.1 L219</td></tr>
+<tr><td><code>real-fd001</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:17:45</td><td>29.4256</td><td>23.9073</td><td>0.2543</td><td>3.7499</td><td>40</td><td>4000</td><td>6</td><td>1</td><td>✓ §10.1 L217</td></tr>
+<tr><td><code>real-fd001</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:43:43</td><td>29.4256</td><td>23.9073</td><td>0.2543</td><td>3.7499</td><td>40</td><td>4000</td><td>6</td><td>1</td><td>✓ §10.1 L217</td></tr>
+<tr><td><code>real-fd001</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 15:44:01</td><td>32.6642</td><td>25.7023</td><td>0.0811</td><td>3.7499</td><td>40</td><td>2120</td><td>6</td><td>1</td><td>✓ §10.1 L218</td></tr>
+<tr><td><code>real-fd001</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 15:44:18</td><td>27.4301</td><td>22.5392</td><td>0.352</td><td>3.7499</td><td>600</td><td>3160</td><td>6</td><td>0</td><td>✓ §10.1 L219</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（7 条）</summary>
 <p class="rid">real-fd001 · <code>3m663eipvyb4iogepwv18</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -523,23 +528,24 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 56, &#x27;data&#x27;: 3}</td><td>{&#x27;index&#x27;: 56, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 静态 66.456 / B 周期(p=8) 43.488 / C 自进化 28.174（C/静态 0.424；C 标签 4000，B 标签 3600）</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §1 表 L26（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 14:51:16 → 2026-11-11 15:44:37（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>CMAPSS FD002</h3>
 <p class="sub">共 3 条运行</p>
+<p class="note-inline">A/B 两臂是脚本内的纯基线计算，不建云端 run（§10 L230）；本页每条 run 是 C 自进化在对应 task_fuse 模式下的记录。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>C-MAPSS（回归，末 5 批 RMSE，task_fuse=or 默认）；每个子集 3 条 run，对应 task_fuse 三模式</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §1 标题 L22 / §10.1 L213（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>source</b>=cmapss</span><span class="chip"><b>subset</b>=fd002</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>task_fuse</b>=and</span><span class="chip"><b>task_fuse</b>=perf_only</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_cmapss.py --subset FD002</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-fd002</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 14:54:02</td><td>34.6096</td><td>29.2632</td><td>0.1172</td><td>4.9239</td><td>40</td><td>2340</td><td>6</td><td>0</td></tr>
-<tr><td><code>real-fd002</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 14:55:05</td><td>34.6096</td><td>29.2632</td><td>0.1172</td><td>4.9239</td><td>40</td><td>1500</td><td>4</td><td>0</td></tr>
-<tr><td><code>real-fd002</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 14:56:04</td><td>34.6096</td><td>29.2632</td><td>0.1172</td><td>4.9239</td><td>40</td><td>1500</td><td>4</td><td>0</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-fd002</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 14:54:02</td><td>34.6096</td><td>29.2632</td><td>0.1172</td><td>4.9239</td><td>40</td><td>2340</td><td>6</td><td>0</td><td>✓ §10.1 L220</td></tr>
+<tr><td><code>real-fd002</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 14:55:05</td><td>34.6096</td><td>29.2632</td><td>0.1172</td><td>4.9239</td><td>40</td><td>1500</td><td>4</td><td>0</td><td>✓ §10.1 L221</td></tr>
+<tr><td><code>real-fd002</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 14:56:04</td><td>34.6096</td><td>29.2632</td><td>0.1172</td><td>4.9239</td><td>40</td><td>1500</td><td>4</td><td>0</td><td>✓ §10.1 L222</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（3 条）</summary>
 <p class="rid">real-fd002 · <code>9qw3hpcbd58rde8cotq0n</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -729,23 +735,24 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>wall_s</td><td>34.706</td><td>{&#x27;index&#x27;: 167, &#x27;data&#x27;: 34.706}</td><td>{&#x27;index&#x27;: 167, &#x27;data&#x27;: 34.706}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 静态 61.553 / B 周期(p=8) 61.486 / C 自进化 35.130（C/静态 0.571；C 标签 2340，B 标签 3600）；摘要：「FD002 证 6 工况切换下仍能恢复（0.571×静态）」</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §1 表 L27 / 摘要 L31（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 14:54:02 → 2026-11-11 14:56:46（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>CMAPSS FD003</h3>
 <p class="sub">共 3 条运行</p>
+<p class="note-inline">A/B 两臂是脚本内的纯基线计算，不建云端 run（§10 L230）；本页每条 run 是 C 自进化在对应 task_fuse 模式下的记录。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>C-MAPSS（回归，末 5 批 RMSE，task_fuse=or 默认）；每个子集 3 条 run，对应 task_fuse 三模式</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §1 标题 L22 / §10.1 L213（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>source</b>=cmapss</span><span class="chip"><b>subset</b>=fd003</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>task_fuse</b>=and</span><span class="chip"><b>task_fuse</b>=perf_only</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_cmapss.py --subset FD003</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-fd003</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 14:57:35</td><td>25.0736</td><td>20.5556</td><td>0.6218</td><td>7.2305</td><td>600</td><td>3220</td><td>6</td><td>1</td></tr>
-<tr><td><code>real-fd003</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 14:58:11</td><td>27.868</td><td>21.2455</td><td>0.5328</td><td>7.2305</td><td>600</td><td>1950</td><td>3</td><td>0</td></tr>
-<tr><td><code>real-fd003</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 14:58:50</td><td>27.4186</td><td>20.6485</td><td>0.5477</td><td>7.2305</td><td>40</td><td>2960</td><td>5</td><td>0</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-fd003</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 14:57:35</td><td>25.0736</td><td>20.5556</td><td>0.6218</td><td>7.2305</td><td>600</td><td>3220</td><td>6</td><td>1</td><td>✓ §10.1 L223</td></tr>
+<tr><td><code>real-fd003</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 14:58:11</td><td>27.868</td><td>21.2455</td><td>0.5328</td><td>7.2305</td><td>600</td><td>1950</td><td>3</td><td>0</td><td>✓ §10.1 L224</td></tr>
+<tr><td><code>real-fd003</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 14:58:50</td><td>27.4186</td><td>20.6485</td><td>0.5477</td><td>7.2305</td><td>40</td><td>2960</td><td>5</td><td>0</td><td>✓ §10.1 L225</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（3 条）</summary>
 <p class="rid">real-fd003 · <code>xhxyri0jr2jh01reohysg</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -980,23 +987,24 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 16, &#x27;data&#x27;: 3}</td><td>{&#x27;index&#x27;: 16, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 静态 291.841 / B 周期(p=8) 371.165 / C 自进化 24.477（C/静态 0.084；C 标签 3220，B 标签 3600）；摘要：「FD003 证盲重训有害（B 比 A 差 27%，C 靠选择性清洗与漂移归因才恢复）」</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §1 表 L28 / 摘要 L31–L32（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 14:57:35 → 2026-11-11 14:59:44（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>CMAPSS FD004</h3>
 <p class="sub">共 3 条运行</p>
+<p class="note-inline">A/B 两臂是脚本内的纯基线计算，不建云端 run（§10 L230）；本页每条 run 是 C 自进化在对应 task_fuse 模式下的记录。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>C-MAPSS（回归，末 5 批 RMSE，task_fuse=or 默认）；每个子集 3 条 run，对应 task_fuse 三模式</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §1 标题 L22 / §10.1 L213（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>source</b>=cmapss</span><span class="chip"><b>subset</b>=fd004</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>task_fuse</b>=and</span><span class="chip"><b>task_fuse</b>=perf_only</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_cmapss.py --subset FD004</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-fd004</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:00:22</td><td>28.8552</td><td>24.3422</td><td>0.4184</td><td>4.5576</td><td>40</td><td>4000</td><td>6</td><td>1</td></tr>
-<tr><td><code>real-fd004</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 15:01:13</td><td>31.8376</td><td>26.8355</td><td>0.2919</td><td>4.5576</td><td>600</td><td>1840</td><td>4</td><td>0</td></tr>
-<tr><td><code>real-fd004</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 15:01:48</td><td>31.8376</td><td>26.8355</td><td>0.2919</td><td>4.5576</td><td>600</td><td>1840</td><td>4</td><td>0</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-fd004</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:00:22</td><td>28.8552</td><td>24.3422</td><td>0.4184</td><td>4.5576</td><td>40</td><td>4000</td><td>6</td><td>1</td><td>✓ §10.1 L226</td></tr>
+<tr><td><code>real-fd004</code></td><td>and</td><td>FINISHED</td><td>2026-11-11 15:01:13</td><td>31.8376</td><td>26.8355</td><td>0.2919</td><td>4.5576</td><td>600</td><td>1840</td><td>4</td><td>0</td><td>✓ §10.1 L227</td></tr>
+<tr><td><code>real-fd004</code></td><td>perf_only</td><td>FINISHED</td><td>2026-11-11 15:01:48</td><td>31.8376</td><td>26.8355</td><td>0.2919</td><td>4.5576</td><td>600</td><td>1840</td><td>4</td><td>0</td><td>✓ §10.1 L228</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（3 条）</summary>
 <p class="rid">real-fd004 · <code>ripi84v1m89d0ksnidz0c</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -1231,15 +1239,16 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>2</td><td>{&#x27;index&#x27;: 106, &#x27;data&#x27;: 2}</td><td>{&#x27;index&#x27;: 106, &#x27;data&#x27;: 2}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 静态 48.458 / B 周期(p=8) 47.796 / C 自进化 29.452（C/静态 0.608；C 标签 4000，B 标签 3600）；摘要：「四个子集 C 均优于 A 与 B」</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §1 表 L29 / 摘要 L32（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 15:00:22 → 2026-11-11 15:02:38（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>GAS-UCI-DRIFT</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">【文档与平台记录不一致】文档 §2 L39–L43 / §10.3 记该数据集 C 臂末 3 批 macro-F1 = 0.467、accuracy = 0.496；本页对应 run 的末 5 批 macro-F1 = 0.4056、末批 0.4018。两边数值对不上，本页不择一采信，故「目的/改动摘要/结论」保持未上传。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description，文档亦无对应记录）</p></div>
+<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=classification</span><span class="chip"><b>source</b>=gas-uci-drift</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>class_buffer_per_class</b>=20</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_gas.py --fuse or</code></p>
@@ -1334,21 +1343,22 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 7, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 17, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录；本页不代拟结论）</p>
 <p class="time">平台记录时间：2026-11-11 14:48:33 → 2026-11-11 14:49:08（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 2_1</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">§3 必读① L72–L73：「C 在 6/6 轴承上优于静态基线（末 5 批 0.122~0.900 倍）」。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>每 50 个采样文件 = 1 批，init-batches=3，period=8；三臂预测值统一裁剪至 [0,1]；只有批数 ≥8 且总样本 ≥400 的 6 个轴承纳入三臂对照</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 协议 L53–L56（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=2_1</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_bearing.py --bearings 2_1,2_3,3_3 --batch-files 50 --init-batches 3 --period 8 --label rul_ratio</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-bearing-2_1</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:03:14</td><td>0.9433</td><td>0.9354</td><td>-1525.0533</td><td>0.4562</td><td>491</td><td>470</td><td>4</td><td>1</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-bearing-2_1</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:03:14</td><td>0.9433</td><td>0.9354</td><td>-1525.0533</td><td>0.4562</td><td>491</td><td>470</td><td>4</td><td>1</td><td>✓ §10.2 L60</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（1 条）</summary>
 <p class="rid">real-bearing-2_1 · <code>k4t3n4dloikvwpk7hs4ku</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -1426,21 +1436,22 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 8, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 13, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 0.7390 / B 0.7390 / C 0.4945（C/静态 0.669）；B 与 A 完全相同属「协议性空转」：该流只有 8~11 批，period=8 在评估窗口内一次都没触发，引用须写成「短流上周期重训未及触发」</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 表 L60 / 必读② L74–L76（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 15:03:14 → 2026-11-11 15:03:26（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 2_3</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">§3 必读① L72–L73：「C 在 6/6 轴承上优于静态基线（末 5 批 0.122~0.900 倍）」。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>每 50 个采样文件 = 1 批，init-batches=3，period=8；三臂预测值统一裁剪至 [0,1]；只有批数 ≥8 且总样本 ≥400 的 6 个轴承纳入三臂对照</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 协议 L53–L56（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=2_3</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_bearing.py --bearings 2_1,2_3,3_3 --batch-files 50 --init-batches 3 --period 8 --label rul_ratio</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-bearing-2_3</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:03:28</td><td>0.1009</td><td>0.0526</td><td>-30.7577</td><td>4.7241</td><td>500</td><td>440</td><td>4</td><td>1</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-bearing-2_3</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:03:28</td><td>0.1009</td><td>0.0526</td><td>-30.7577</td><td>4.7241</td><td>500</td><td>440</td><td>4</td><td>1</td><td>✓ §10.2 L61</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（1 条）</summary>
 <p class="rid">real-bearing-2_3 · <code>cjdtok50vawg2jepcfg67</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -1518,21 +1529,22 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 13, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 8, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 0.7872 / B 0.7872 / C 0.3638（C/静态 0.462）；B 与 A 相同属「协议性空转」，不得写成「周期重训无收益」</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 表 L61 / 必读② L74–L76（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 15:03:28 → 2026-11-11 15:03:38（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 3_1</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">§3 必读① L72–L73：「C 在 6/6 轴承上优于静态基线（末 5 批 0.122~0.900 倍）」。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>每 50 个采样文件 = 1 批，init-batches=3，period=8；三臂预测值统一裁剪至 [0,1]；只有批数 ≥8 且总样本 ≥400 的 6 个轴承纳入三臂对照</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 协议 L53–L56（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=3_1</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_bearing.py --bearings 3_1,3_2,3_4 --batch-files 50 --init-batches 3 --period 8 --label rul_ratio</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-bearing-3_1</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:04:13</td><td>0.4241</td><td>0.2674</td><td>-9626.4689</td><td>0.537</td><td>30</td><td>1640</td><td>6</td><td>1</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-bearing-3_1</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:04:13</td><td>0.4241</td><td>0.2674</td><td>-9626.4689</td><td>0.537</td><td>30</td><td>1640</td><td>6</td><td>1</td><td>✓ §10.2 L62</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（1 条）</summary>
 <p class="rid">real-bearing-3_1 · <code>75hrxge9bjpmybg9g63bb</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -1613,21 +1625,22 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>1</td><td>{&#x27;index&#x27;: 16, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 8, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 0.9552 / B 0.4354 / C 0.5433（C/静态 0.569）；「成本未全赢」：B 末段精度优于 C，但 B 花 3150 条标签，C 只花 1640 条</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 表 L62 / 必读③ L77–L79（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 15:04:13 → 2026-11-11 15:04:27（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 3_2</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">§3 必读① L72–L73：「C 在 6/6 轴承上优于静态基线（末 5 批 0.122~0.900 倍）」。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>每 50 个采样文件 = 1 批，init-batches=3，period=8；三臂预测值统一裁剪至 [0,1]；只有批数 ≥8 且总样本 ≥400 的 6 个轴承纳入三臂对照</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 协议 L53–L56（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=3_2</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_bearing.py --bearings 3_1,3_2,3_4 --batch-files 50 --init-batches 3 --period 8 --label rul_ratio</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-bearing-3_2</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:04:32</td><td>0.1074</td><td>0.0792</td><td>-406.0936</td><td>0.3527</td><td>30</td><td>1580</td><td>6</td><td>1</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-bearing-3_2</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:04:32</td><td>0.1074</td><td>0.0792</td><td>-406.0936</td><td>0.3527</td><td>30</td><td>1580</td><td>6</td><td>1</td><td>✓ §10.2 L63</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（1 条）</summary>
 <p class="rid">real-bearing-3_2 · <code>qd214r5ye4jhbwo75kxrr</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -1706,21 +1719,22 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>1</td><td>{&#x27;index&#x27;: 13, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 8, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 0.9516 / B 0.1394 / C 0.1160（C/静态 0.122）</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 表 L63（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 15:04:32 → 2026-11-11 15:04:44（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 3_3</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">§3 必读① L72–L73：「C 在 6/6 轴承上优于静态基线（末 5 批 0.122~0.900 倍）」。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>每 50 个采样文件 = 1 批，init-batches=3，period=8；三臂预测值统一裁剪至 [0,1]；只有批数 ≥8 且总样本 ≥400 的 6 个轴承纳入三臂对照</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 协议 L53–L56（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=3_3</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_bearing.py --bearings 2_1,2_3,3_3 --batch-files 50 --init-batches 3 --period 8 --label rul_ratio</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-bearing-3_3</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:03:41</td><td>0.9731</td><td>0.973</td><td>-3534.5455</td><td>0.3875</td><td>371</td><td>320</td><td>3</td><td>1</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-bearing-3_3</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:03:41</td><td>0.9731</td><td>0.973</td><td>-3534.5455</td><td>0.3875</td><td>371</td><td>320</td><td>3</td><td>1</td><td>✓ §10.2 L64</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（1 条）</summary>
 <p class="rid">real-bearing-3_3 · <code>stjxfek8p1piwqqgqdoh2</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -1798,21 +1812,22 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 8, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 13, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 0.6493 / B 0.6493 / C 0.5843（C/静态 0.900）；B 与 A 相同属「协议性空转」</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 表 L64 / 必读② L74–L76（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 15:03:41 → 2026-11-11 15:03:48（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 3_4</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">§3 必读① L72–L73：「C 在 6/6 轴承上优于静态基线（末 5 批 0.122~0.900 倍）」。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><blockquote>每 50 个采样文件 = 1 批，init-batches=3，period=8；三臂预测值统一裁剪至 [0,1]；只有批数 ≥8 且总样本 ≥400 的 6 个轴承纳入三臂对照</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 协议 L53–L56（逐字引用）</p></div>
+<div><h4>改动摘要</h4><blockquote>把三个真实数据脚本里硬编码的 use_swanlab=False 改为读 config.logging.swanlab（默认 true），实验参数 / 种子 / 预算 / 数据切分一律未改</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §10 上传方式 L209–L211（逐字引用）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=3_4</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/run_real_bearing.py --bearings 3_1,3_2,3_4 --batch-files 50 --init-batches 3 --period 8 --label rul_ratio</code></p>
 <h4>指标结果（SwanLab 记录值）</h4>
-<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th></tr></thead><tbody>
-<tr><td><code>real-bearing-3_4</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:04:48</td><td>0.0054</td><td>0.0046</td><td>-2.625</td><td>0.5944</td><td>600</td><td>540</td><td>6</td><td>1</td></tr>
+<div class="tbl"><table><thead><tr><th>运行</th><th>融合/臂</th><th>状态</th><th>平台时间</th><th>eval_rmse</th><th>eval_mae</th><th>eval_r2</th><th>rmse</th><th>accept_n</th><th>labels_used</th><th>n_retrains</th><th>alarm</th><th>文档对应</th></tr></thead><tbody>
+<tr><td><code>real-bearing-3_4</code></td><td>or</td><td>FINISHED</td><td>2026-11-11 15:04:48</td><td>0.0054</td><td>0.0046</td><td>-2.625</td><td>0.5944</td><td>600</td><td>540</td><td>6</td><td>1</td><td>✓ §10.2 L65</td></tr>
 </tbody></table></div>
 <details><summary>展开：每条运行的全部记录指标（1 条）</summary>
 <p class="rid">real-bearing-3_4 · <code>im6lbf3g7xowlcqg16z51</code></p><div class="tbl small"><table><thead><tr><th>指标</th><th>末次</th><th>最小</th><th>最大</th></tr></thead><tbody>
@@ -1895,16 +1910,17 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 16, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 24, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><blockquote>A 0.9386 / B 0.3046 / C 0.4560（C/静态 0.486）；「成本未全赢」：B 末段精度优于 C，但 B 花 1950 条标签，C 只花 540 条</blockquote><p class="src">来源：<code>zhixun-engine/docs/最终结果表.md</code> §3 表 L65 / 必读③ L77–L79（逐字引用）</p>
 <p class="time">平台记录时间：2026-11-11 15:04:48 → 2026-11-11 15:04:58（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <h2>二、A3 抗遗忘实测</h2><p class='lead'>在未参与训练的留出行/单元上回测，判定沿用严格口径；批次级指标与主结果表不可直接混比。</p>
 <section class="card">
 <h3>CMAPSS FD001</h3>
 <p class="sub">共 4 条运行</p>
+<p class="note-inline">【文档与平台记录不一致】文档 §11.7 给出的权威保持率（FD001 0.086 / FD002 0.068 / gas 0.256 / bearing 3_1 0.372，另两条 1.000 为空转对照组）与本页 run 的 retention_ratio 等记录对不上（例：3_1 末 5 批 0.6674）；且同一数据集存在多条同名上传（a3-retention-fd001 共 4 条），文档未给出可区分的平台短 id，无法判定哪条是权威版本，故不据文档回填。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description，文档亦无对应记录）</p></div>
+<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>source</b>=cmapss</span><span class="chip"><b>subset</b>=fd001</span><span class="chip"><b>testbed</b>=held-out units (never trained)</span><span class="chip"><b>protocol</b>=a3-retention</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>reserve_every</b>=5</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/a3_retention_backtest.py --dataset cmapss --subset FD001</code><br><code>scripts/a3_retention_backtest.py --subset FD001</code></p>
@@ -2133,15 +2149,16 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>wall_s</td><td>13.823</td><td>{&#x27;index&#x27;: 58, &#x27;data&#x27;: 13.823}</td><td>{&#x27;index&#x27;: 58, &#x27;data&#x27;: 13.823}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录；本页不代拟结论）</p>
 <p class="time">平台记录时间：2026-11-11 15:19:29 → 2026-11-11 15:33:56（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>CMAPSS FD002</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">【文档与平台记录不一致】文档 §11.7 给出的权威保持率（FD001 0.086 / FD002 0.068 / gas 0.256 / bearing 3_1 0.372，另两条 1.000 为空转对照组）与本页 run 的 retention_ratio 等记录对不上（例：3_1 末 5 批 0.6674）；且同一数据集存在多条同名上传（a3-retention-fd001 共 4 条），文档未给出可区分的平台短 id，无法判定哪条是权威版本，故不据文档回填。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description，文档亦无对应记录）</p></div>
+<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>source</b>=cmapss</span><span class="chip"><b>subset</b>=fd002</span><span class="chip"><b>testbed</b>=held-out units (never trained)</span><span class="chip"><b>protocol</b>=a3-retention</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>reserve_every</b>=5</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/a3_retention_backtest.py --dataset cmapss --subset FD002</code></p>
@@ -2229,15 +2246,16 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 8, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 35, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录；本页不代拟结论）</p>
 <p class="time">平台记录时间：2026-11-11 15:28:21 → 2026-11-11 15:28:44（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>GAS-UCI-DRIFT</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">【文档与平台记录不一致】文档 §11.7 给出的权威保持率（FD001 0.086 / FD002 0.068 / gas 0.256 / bearing 3_1 0.372，另两条 1.000 为空转对照组）与本页 run 的 retention_ratio 等记录对不上（例：3_1 末 5 批 0.6674）；且同一数据集存在多条同名上传（a3-retention-fd001 共 4 条），文档未给出可区分的平台短 id，无法判定哪条是权威版本，故不据文档回填。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description，文档亦无对应记录）</p></div>
+<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=classification</span><span class="chip"><b>source</b>=gas-uci-drift</span><span class="chip"><b>testbed</b>=held-out rows of batch1 (never trained)</span><span class="chip"><b>protocol</b>=a3-retention</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>reserve_batch1_frac</b>=0.3</span><span class="chip"><b>class_buffer_per_class</b>=20</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/a3_retention_backtest.py --dataset gas</code></p>
@@ -2335,15 +2353,16 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 7, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 12, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录；本页不代拟结论）</p>
 <p class="time">平台记录时间：2026-11-11 15:29:05 → 2026-11-11 15:29:35（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 2_1</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">【文档与平台记录不一致】文档 §11.7 给出的权威保持率（FD001 0.086 / FD002 0.068 / gas 0.256 / bearing 3_1 0.372，另两条 1.000 为空转对照组）与本页 run 的 retention_ratio 等记录对不上（例：3_1 末 5 批 0.6674）；且同一数据集存在多条同名上传（a3-retention-fd001 共 4 条），文档未给出可区分的平台短 id，无法判定哪条是权威版本，故不据文档回填。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description，文档亦无对应记录）</p></div>
+<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=2_1</span><span class="chip"><b>testbed</b>=held-out csv rows (never trained)</span><span class="chip"><b>protocol</b>=a3-retention</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span><span class="chip"><b>reserve_file_stride</b>=2</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/a3_retention_backtest.py --dataset bearing --bearing 2_1</code></p>
@@ -2404,15 +2423,16 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>wall_s</td><td>0.828</td><td>{&#x27;index&#x27;: 7, &#x27;data&#x27;: 0.828}</td><td>{&#x27;index&#x27;: 7, &#x27;data&#x27;: 0.828}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录；本页不代拟结论）</p>
 <p class="time">平台记录时间：2026-11-11 15:31:15 → 2026-11-11 15:31:22（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 3_1</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">【文档与平台记录不一致】文档 §11.7 给出的权威保持率（FD001 0.086 / FD002 0.068 / gas 0.256 / bearing 3_1 0.372，另两条 1.000 为空转对照组）与本页 run 的 retention_ratio 等记录对不上（例：3_1 末 5 批 0.6674）；且同一数据集存在多条同名上传（a3-retention-fd001 共 4 条），文档未给出可区分的平台短 id，无法判定哪条是权威版本，故不据文档回填。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description，文档亦无对应记录）</p></div>
+<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=3_1</span><span class="chip"><b>testbed</b>=held-out csv rows (never trained)</span><span class="chip"><b>protocol</b>=a3-retention</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span><span class="chip"><b>reserve_file_stride</b>=2</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/a3_retention_backtest.py --dataset bearing --bearing 3_1</code></p>
@@ -2496,15 +2516,16 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>window_batches</td><td>3</td><td>{&#x27;index&#x27;: 8, &#x27;data&#x27;: 1}</td><td>{&#x27;index&#x27;: 13, &#x27;data&#x27;: 3}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录；本页不代拟结论）</p>
 <p class="time">平台记录时间：2026-11-11 15:30:48 → 2026-11-11 15:31:01（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <section class="card">
 <h3>XJTU-SY 3_3</h3>
 <p class="sub">共 1 条运行</p>
+<p class="note-inline">【文档与平台记录不一致】文档 §11.7 给出的权威保持率（FD001 0.086 / FD002 0.068 / gas 0.256 / bearing 3_1 0.372，另两条 1.000 为空转对照组）与本页 run 的 retention_ratio 等记录对不上（例：3_1 末 5 批 0.6674）；且同一数据集存在多条同名上传（a3-retention-fd001 共 4 条），文档未给出可区分的平台短 id，无法判定哪条是权威版本，故不据文档回填。</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description）</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><p class="miss">未上传（SwanLab 该运行未填写 description，文档亦无对应记录）</p></div>
+<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>task</b>=regression</span><span class="chip"><b>label</b>=rul_ratio</span><span class="chip"><b>source</b>=xjtu-sy</span><span class="chip"><b>bearing</b>=3_3</span><span class="chip"><b>testbed</b>=held-out csv rows (never trained)</span><span class="chip"><b>protocol</b>=a3-retention</span><span class="chip"><b>task_fuse</b>=or</span><span class="chip"><b>batch_files</b>=50</span><span class="chip"><b>reserve_file_stride</b>=2</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>scripts/a3_retention_backtest.py --dataset bearing --bearing 3_3</code></p>
@@ -2562,7 +2583,7 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>wall_s</td><td>0.63</td><td>{&#x27;index&#x27;: 4, &#x27;data&#x27;: 0.63}</td><td>{&#x27;index&#x27;: 4, &#x27;data&#x27;: 0.63}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录；本页不代拟结论）</p>
 <p class="time">平台记录时间：2026-11-11 15:31:36 → 2026-11-11 15:31:42（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <h2>三、汇总实验表</h2><p class='lead'>由本地汇总表批量同步到平台的历史记录，含平台侧的 description 说明。</p>
@@ -2570,8 +2591,8 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <h3>汇总表</h3>
 <p class="sub">共 7 条运行</p>
 <div class="grid">
-<div><h4>目的 / 假设</h4><p class="miss">汇总实验表（本地文件 gating_ablation_v11.csv），由 swanlab_sync_20261105 批次同步</p></div>
-<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段）</p></div>
+<div><h4>目的 / 假设</h4><p>汇总实验表（本地文件 gating_ablation_v11.csv），由 swanlab_sync_20261105 批次同步</p></div>
+<div><h4>改动摘要</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录）</p></div>
 </div>
 <h4>配置</h4><div class="chips"><span class="chip"><b>type</b>=summary_table</span><span class="chip"><b>n_rows</b>=36</span><span class="chip"><b>local_file</b>=gating_ablation_v11.csv</span><span class="chip"><b>sync_batch</b>=swanlab_sync_20261105</span><span class="chip"><b>local_timestamp</b>=2026-11-02 12:05:38</span><span class="chip"><b>n_rows</b>=24</span><span class="chip"><b>local_file</b>=budget_sweep.csv</span><span class="chip"><b>local_timestamp</b>=2026-11-01 16:19:04</span><span class="chip"><b>n_rows</b>=140</span><span class="chip"><b>local_file</b>=rebaseline_eval.csv</span><span class="chip"><b>local_timestamp</b>=2026-11-02 08:38:29</span><span class="chip"><b>n_rows</b>=48</span><span class="chip"><b>local_file</b>=innov45_eval.csv</span><span class="chip"><b>local_timestamp</b>=2026-11-01 22:08:33</span><span class="chip"><b>local_file</b>=probe_accept_gate.csv</span><span class="chip"><b>local_timestamp</b>=2026-11-02 10:10:08</span><span class="chip"><b>n_rows</b>=120</span><span class="chip"><b>local_file</b>=rebaseline_eval_v2.csv</span><span class="chip"><b>local_timestamp</b>=2026-11-02 08:04:28</span><span class="chip"><b>local_file</b>=rebaseline_eval_v1.csv</span><span class="chip"><b>local_timestamp</b>=2026-11-02 07:48:22</span></div>
 <p class="cmd">运行入口（已去除本机路径）：<code>upload_local.py --shard 0 --nshard 3</code><br><code>upload_local.py --shard 1 --nshard 3</code><br><code>upload_local.py --shard 2 --nshard 3</code></p>
@@ -2677,7 +2698,7 @@ footer{margin-top:50px;color:var(--mut);font-size:12.5px;border-top:1px solid va
 <tr><td>threshold_final</td><td>3</td><td>{&#x27;index&#x27;: 0, &#x27;data&#x27;: 3}</td><td>{&#x27;index&#x27;: 4, &#x27;data&#x27;: 6}</td></tr>
 </tbody></table></div>
 </details>
-<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，本页不代拟结论）</p>
+<h4>结论</h4><p class="miss">未上传（SwanLab 无对应字段，文档亦无对应记录；本页不代拟结论）</p>
 <p class="time">平台记录时间：2026-11-05 09:16:27 → 2026-11-05 09:17:06（上传/记录时间，非训练墙钟时间）</p>
 </section>
 <h2>四、其他运行（含合成数据，仅内部追溯）</h2><p class='lead'>流程验证与合成数据运行。按项目既有约定，这些结果不得作为对外证据引用。</p>
